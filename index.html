@@ -8,9 +8,7 @@
 </head>
 <body>
 
-<!-- ===================== NAV =====================
-     Se for virar PHP, esse bloco é um ótimo candidato pra header.php
-     (fica igual em index.php, game.php e profile.php). -->
+
 <nav class="nav">
   <div class="container nav-inner">
     <a href="index.html" class="logo">Game<span>Box</span></a>
@@ -31,9 +29,7 @@
 
 <main class="container">
 
-  <!-- ===================== JOGANDO AGORA =====================
-       PHP: aqui normalmente entraria 1 registro (o "currently playing"
-       do usuário logado), então não precisa de loop — é só 1 SELECT. -->
+ 
   <div class="section-head" style="margin-top:32px;">
     <h2>Jogando agora</h2>
   </div>
@@ -48,10 +44,7 @@
     </div>
   </div>
 
-  <!-- ===================== POPULARES =====================
-       JS: essa div é o alvo natural pra getPopularGames() do rawg-api.js —
-       ver comentário no fim do arquivo com o exemplo de preenchimento.
-       PHP: se preferir montar no servidor, isso vira um foreach($jogos as $jogo). -->
+ 
   <div class="section-head">
     <h2>Populares esta semana</h2>
     <a href="#">ver todos</a>
@@ -60,9 +53,7 @@
     <div class="api-loading">Carregando jogos da RAWG...</div>
   </div>
 
-  <!-- ===================== ATIVIDADE DE AMIGOS =====================
-       PHP: aqui entra um foreach($atividades as $a) — cada item é
-       um registro de log (quem, o quê, nota, comentário). -->
+  
   <div class="section-head">
     <h2>Atividade recente</h2>
   </div>
@@ -74,7 +65,7 @@
       <div>
         <div class="meta"><strong>marina_p</strong> jogou <strong>Balatro</strong> · 2 dias atrás</div>
         <div class="stars">★★★★★</div>
-        <p>Joguei "só mais uma rodada" até 3h da manhã três vezes essa semana.</p>
+        <p>Joguei 3 horas seguidas na primeira gameplay, muito bom.</p>
       </div>
     </div>
     <!-- LOOP END -->
@@ -91,7 +82,7 @@
       <div>
         <div class="meta"><strong>rafa_games</strong> jogou <strong>Clair Obscur: Expedition 33</strong> · 1 semana atrás</div>
         <div class="stars">★★★★☆</div>
-        <p>Trilha sonora carrega o jogo inteiro nas costas. Sistema de combate surpreendeu.</p>
+        <p>Sistema de combate surpreendeu. A triha sonora é absurda.</p>
       </div>
     </div>
 
