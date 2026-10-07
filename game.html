@@ -28,13 +28,7 @@
 
 <main class="container">
 
-  <!-- ===================== FICHA DO JOGO =====================
-       JS: alvo ideal pra getGameDetails(id) do rawg-api.js.
-       Os ids abaixo (game-cover, game-title, etc.) já estão prontos
-       pra você preencher via document.querySelector(...) — ver
-       exemplo comentado no fim da página.
-       PHP: se for buscar no servidor, esses mesmos campos vêm do
-       JSON do RAWG e podem ser ecoados direto com <?php echo ?>. -->
+
   <div id="api-status" class="api-status">Carregando informações do jogo...</div>
   <div class="hero">
     <div class="cover-big">
@@ -61,16 +55,12 @@
     </div>
   </div>
 
-  <!-- ===================== SCREENSHOTS =====================
-       JS: alvo pra getGameScreenshots(id). -->
   <div class="section-head">
     <h2>Screenshots</h2>
   </div>
   <div class="shots" id="game-screenshots"><div class="api-loading">Carregando screenshots...</div></div>
 
-  <!-- ===================== LOGS DE OUTROS JOGADORES =====================
-       PHP: foreach($logs as $log) — cada log é de um usuário diferente
-       jogando ESTE jogo específico (diferente da home, que mistura jogos). -->
+  
   <div class="section-head">
     <h2>Comentários</h2>
   </div>
