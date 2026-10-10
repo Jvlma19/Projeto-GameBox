@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameBox — seu diário de jogos</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">Game<span>Box</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Início</a>
+      <a href="descobrir.php">Descobrir</a>
+      <a href="diario.php">Diário</a>
+    </div>
+    <div class="nav-right"><a class="auth-link" href="login.php">Entrar</a><a class="auth-link" href="cadastro.php">Cadastrar</a>
+      <form class="search-form" action="index.html" method="get">
+        <input class="search" name="search" type="search" placeholder="Buscar um jogo..." aria-label="Buscar um jogo">
+        <button type="submit">Buscar</button>
+      </form>
+      <a href="perfil.php"><img class="avatar" src="https://placehold.co/64x64/232a36/8890a0?text=EU" alt="Seu perfil"></a>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+
+  
+  <div class="section-head" style="margin-top:32px;">
+    <h2>Jogando agora</h2>
+  </div>
+  <div class="entry" style="border-bottom:none;">
+    <div class="cover-sm" style="width:70px; height:94px;">
+      <img src="https://placehold.co/300x400/1a1f29/e8a33d?text=Hades+II" alt="Capa de Hades II">
+    </div>
+    <div>
+      <div class="meta"><strong>Hades II</strong> · PC · iniciado há 4 dias</div>
+      <div class="stars">★★★★☆</div>
+      <p>16h jogadas. Ainda tentando derrotar o segundo chefe da região de gelo.</p>
+    </div>
+  </div>
+
+  
+  <div class="section-head">
+    <h2>Populares esta semana</h2>
+    <a href="#">ver todos</a>
+  </div>
+  <div class="game-grid" id="popular-games">
+    <div class="api-loading">Carregando jogos da RAWG...</div>
+  </div>
+
+  
+  <div class="section-head">
+    <h2>Atividade recente</h2>
+  </div>
+  <div id="activity-feed">
+
+    <!-- LOOP START -->
+    <div class="entry">
+      <div class="cover-sm"><img src="https://placehold.co/300x400/1a1f29/edeef0?text=Balatro" alt="Balatro"></div>
+      <div>
+        <div class="meta"><strong>marina_p</strong> jogou <strong>Balatro</strong> · 2 dias atrás</div>
+        <div class="stars">★★★★★</div>
+        <p>Joguei "só mais uma rodada" até 3h da manhã três vezes essa semana.</p>
+      </div>
+    </div>
+    <!-- LOOP END -->
+
+    <div class="entry">
+      <div class="cover-sm"><img src="https://placehold.co/300x400/1a1f29/edeef0?text=Elden+Ring" alt="Elden Ring"></div>
+      <div>
+        <div class="meta"><strong>joao.dev</strong> adicionou <strong>Elden Ring</strong> ao backlog · 5 dias atrás</div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="cover-sm"><img src="https://placehold.co/300x400/1a1f29/edeef0?text=Clair+Obscur" alt="Clair Obscur: Expedition 33"></div>
+      <div>
+        <div class="meta"><strong>rafa_games</strong> jogou <strong>Clair Obscur: Expedition 33</strong> · 1 semana atrás</div>
+        <div class="stars">★★★★☆</div>
+        <p>Trilha sonora carrega o jogo inteiro nas costas. Sistema de combate surpreendeu.</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- footer.php seria outro bom candidato de include -->
+<footer class="site-footer">
+  <div class="container">
+    GameBox — protótipo pessoal. Dados de jogos via <a href="https://rawg.io" style="color:var(--teal)">RAWG API</a>.
+  </div>
+</footer>
+
+<script src="rawg-api.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
